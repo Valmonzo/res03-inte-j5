@@ -1,0 +1,75 @@
+@import "vars";
+@import "reset";
+
+
+html {
+  font-size: 16px;
+
+  body {
+      font-size: 16px;
+      font-family: 'JetBrains Mono', monospace;
+      background: $gradient-top-left;
+      color: white;
+
+      & > header {
+          display:grid;
+          height:10vh;
+          border-bottom:1px solid white;
+          h1 {
+              display:none;
+          }
+          nav {
+              align-self:center;
+              justify-self:center;
+
+              ul {
+                  li {
+                      display:inline-block;
+                      font-size:0.8em;
+                      margin: 0vh 5vw;
+                      font-weight:bold;
+                  }
+              }
+          }
+
+      }
+
+    main {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        height:90vh;
+
+        #left {
+            width:50%;
+            display:grid;
+            align-self:center;
+            justify-self:center;
+            width:70%;
+
+
+            h2 {
+                font-size:2.6em;
+                text-transform:uppercase;
+                font-weight:bold;
+                justify-self:center;
+                align-self:center;
+                text-align:left;
+                width:100%;
+            }
+
+            h3 {
+                font-size:1.6em;
+                font-weight:bold;
+                justify-self:center;
+                align-self:center;
+                width:100%;
+            }
+        }
+
+        #right {
+            width:50%;
+            height:100%;
+        }
+    }
+  }
+}
