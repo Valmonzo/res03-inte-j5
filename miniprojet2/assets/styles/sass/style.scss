@@ -1,0 +1,38 @@
+@import "reset";
+@import "vars";
+
+
+html {
+  font-size: 16px;
+
+  body {
+      font-size: 16px;
+      font-family: 'JetBrains Mono', monospace;
+      background: $gradient-bottom;
+      color: white;
+      height:100vh;
+
+      & > header {
+          display:grid;
+          height:10vh;
+          border-bottom:1px solid white;
+          h1 {
+              display:none;
+          }
+          nav {
+              align-self:center;
+              justify-self:center;
+
+              ul {
+                  li {
+                      display:inline-block;
+                      font-size:0.8em;
+                      margin: 0vh 5vw;
+                      font-weight:bold;
+                  }
+              }
+          }
+
+      }
+  }
+}
